@@ -1,0 +1,75 @@
+.diecinueveavo{
+  position: relative;
+  min-height: 100vh;
+  background: url(/assets/diecinueveavo/elida-homes.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #000;
+  .content-txt{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    color: #fff;
+    padding: 1rem;
+    .container-txt{
+      background: url(https://elida.my.canva.site/videos/0601010dfb6cce713ccd50949bd7baf6.gif);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: flex-end;
+    }
+    .content-txt_txt{
+      p{
+        font-size: 2.2rem;
+        text-align: center;
+        font-weight: bold;
+        text-shadow: 0 2px 5px rgb(0 0 0 / 30%);
+      }
+    }
+    .elida-text{
+      p{
+        text-shadow: 0 2px 5px rgb(0 0 0 / 30%);
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 800px){
+  .diecinueveavo{
+    .content-txt{
+      padding: 2rem;
+      .content-txt_txt{
+        p{
+          font-size: 3.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .diecinueveavo{
+    .content-txt{
+      .content-txt_txt{
+        p{
+          font-size: 4.5rem;
+        }
+      }
+      .elida-text{
+        p{
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+.diecisieteavo{
+  position: relative;
+  min-height: 100vh;
+  background: url(/assets/diecisieteavo/elida-homes.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 60% 0;
+  color: #fff;
+  .content-text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    .content-text_key{
+      p{
+        font-size: 2.2rem;
+        font-weight: bold;
+      }
+    }
+    .content-text_contact{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      p{
+        text-align: center;
+        font-weight: 300;
+        font-size: 1.3rem;
+        span{
+          font-weight: normal;
+          font-size: 2.2rem;
+        }
+      }
+      .pointer{
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 800px){
+  .diecisieteavo{
+    background-position: center;
+    .content-text{
+      .content-text_key{
+        padding: 1rem 0 0 7rem;
+        p{
+          font-size: 3.2rem;
+          font-weight: bold;
+        }
+      }
+      .content-text_contact{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 1rem 4rem;
+        .pointer{
+          display: inline-block;
+          max-width: 200px;
+          transform: rotate(90deg) translateX(-50px);
+        }
+        p{
+          text-align: center;
+          font-weight: 300;
+          font-size: 2.3rem;
+          span{
+            font-weight: normal;
+            font-size: 3.2rem;
+          }
+        }
+      }
+    }
+  }
+}

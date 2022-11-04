@@ -1,0 +1,62 @@
+<div class="veinteavo">
+  <div class="content-txt">
+    <div class="content-form">
+      <form action="" class="container" [formGroup]="contactForm" (ngSubmit)="sendData()">
+        <div class="content-txt_elida">
+          <div>
+            <label for="name">Nombre</label>
+            <input type="text" formControlName="Nombre" name="name">
+          </div>
+          <div>
+            <label for="phone">Telefono</label>
+            <input type="text" formControlName="Telefono" name="phone">
+          </div>
+          <div>
+            <label for="email">E-mail</label>
+            <input type="text" formControlName="Email" name="email">
+          </div>
+          <div>
+            <label for="help">¿En qué puedo ayudarte?</label>
+            <input type="text" formControlName="Mensaje" name="help">
+          </div>
+        </div>
+        <div class="container-socials">
+          <div class="content-key">
+            <div class="content-radio">
+              <input type="radio" formControlName="sell" (change)="resetPres()" name="sell" value="no" id="sell">
+              <label for="sell"> Quiero vender</label>
+            </div>
+            <div class="content-key_div">
+              <img src="/assets/menu/llave-menu.png" alt="">
+              <p>Elida Homes</p>
+            </div>
+          </div>
+          <div class="sellOptions">
+            <div class="content-radio">
+              <input type="radio" (change)="enablePres()" formControlName="sell" name="sell" value="yes" id="buy">
+              <label for="buy">Quiero Comprar</label>
+            </div>
+            <div class="content-pres">
+              <p>Mi Presupuesto es:</p>
+            </div>
+            <div class="otherRadio">
+              <input formControlName="Presupuesto" type="radio" name="Presupuesto" value="Menos a $200.000" id="pres1">
+              <label for="pres1">Menos a $200.000</label>
+            </div>
+            <div class="otherRadio">
+              <input formControlName="Presupuesto" type="radio" name="Presupuesto" value="Entre $200.000 a $300.000" id="pres2">
+              <label for="pres2">Entre $200.000 a $300.000</label>
+            </div>
+            <div class="otherRadio">
+              <input formControlName="Presupuesto" type="radio" name="Presupuesto" value="Superior a $300.000" id="pres3">
+              <label for="pres3">Superior a $300.000</label>
+            </div>
+          </div>
+        </div>
+        <div [ngClass]="{'disableBtn': contactForm.invalid}">
+          <app-green-btn [contact]="'¡CONTACTAME!'"></app-green-btn>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

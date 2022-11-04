@@ -1,0 +1,97 @@
+.veintiunavo{
+  position: relative;
+  min-height: 100vh;
+  background: url(/assets/veintiunavo/elida-homes.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 10%;
+  color: #fff;
+  .container-txt{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+    .container{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      .content-txt_txt{
+        text-align: center;
+        .you-won{
+          font-size: 2rem;
+          font-weight: bold;
+        }
+      }
+      .qr-content{
+        display: flex;
+        justify-content: space-around;
+        .qrCompradores{
+          .qrCompradoresImg{
+            background: url(https://elida.my.canva.site/images/23ba4128bd24c1105da729bb5cf289e9.svg);
+          }
+        }
+        .qrVendedores{
+          .qrVendedoresImg{
+            background: url(https://elida.my.canva.site/images/23ba4128bd24c1105da729bb5cf289e9.svg);
+          }
+        }
+        .qrCompradores, .qrVendedores{
+          text-align: center;
+          .qrCompradoresImg, .qrVendedoresImg{
+            margin: auto;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100px;
+            height: 100px;
+          }
+        }
+        
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 800px){
+  .veintiunavo{
+    color: #000;
+    .container-txt{
+      justify-content: flex-end;
+      .container{
+        height: 100%;
+        max-width: 60%;
+        justify-content: space-evenly;
+        gap: 0;
+        .content-txt_txt{
+          .congrats-txt{
+            font-size: 2.2rem;
+          }
+          .won-text{
+            .you-won{
+              font-size: 4rem;
+            }
+            .download-txt{
+              font-size: 1.2rem;
+            }
+          }
+        }
+        .qr-content{
+          .qrCompradores, .qrVendedores{
+            text-align: center;
+            p{
+              font-size: 1.5rem;
+              margin-top: 2rem;
+            }
+            .qrCompradoresImg, .qrVendedoresImg{
+              width: 200px;
+              height: 200px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

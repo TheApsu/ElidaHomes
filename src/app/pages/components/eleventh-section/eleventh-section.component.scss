@@ -1,0 +1,38 @@
+.eleventhSection{
+  width: 100%;
+  min-height: 100vh;
+  background: url(/assets/eleventSection/eleventhBg.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+  .content-txt{
+    position: absolute;
+    top: 4%;
+    width: 100%;
+    right: 4%;
+    text-align: right;
+    p{
+      font-size: 2rem;
+      font-weight: bold;
+      text-shadow: 0 0 10px #0000006e;
+    }
+  }
+  .content-btn{
+    position: absolute;
+    bottom: 8%;
+    left: 8%;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .eleventhSection{
+    .content-txt{
+      width: 50%;
+      p{
+        font-size: 3rem;
+      }
+    }
+  }
+}

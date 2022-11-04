@@ -1,0 +1,34 @@
+.quinceavo{
+  position: relative;
+  min-height: 100vh;
+  background: url(/assets/quinceavo/elida-homes.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .content-txt{
+    color: #fff;
+    padding: 1rem;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    p{
+      font-size: 2.2rem;
+      text-shadow: 0 2px 5px rgb(0 0 0 / 30%);
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (min-width: 800px){
+  .quinceavo{
+    .content-txt{
+      justify-content: flex-start;
+      p{
+        font-size: 3.2rem;
+      }
+    }
+  }
+}

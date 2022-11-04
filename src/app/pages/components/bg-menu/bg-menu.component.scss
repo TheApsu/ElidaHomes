@@ -1,0 +1,180 @@
+.content-menu{
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  .content-menu_bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+  }
+  .content-menu_options{
+    position: absolute;
+    background: url('/assets/menu/menu-elida-01.png');
+    top: 2%;
+    width: 100%;
+    height: 3rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    .nav{
+      display: flex;
+      justify-content: space-evenly;
+      height: 100%;
+      align-items: center;
+      a, span{
+        color: #fff;
+        text-decoration: none;
+        font-size: 9px;
+        font-weight: bold;
+        text-shadow: 0 0 5px rgba(0,0, 0, .3);
+        &:nth-child(2){
+          transform: translateX(150%);
+        }
+        &:nth-child(3){
+          transform: translateX(65%);
+        }
+        &:nth-child(4){
+          transform: translateX(50%);
+        }
+      }
+      span{
+        transform: translateX(20%);
+        cursor: pointer;
+      } 
+    }
+    .content-menu_options_img{
+      width: 100%;
+      max-width: 70%;
+    }
+  }
+  .content-menu-key{
+    text-align: center;
+    width: max-content;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    .content-menu-key_img{
+      height: 5rem;
+      object-fit: cover;
+      
+    }
+    .content-menu-key_elida-name{
+      letter-spacing: 0.2em;
+      text-align: center;
+      color: #fff;
+      font-weight: 400;
+      text-shadow: 0 0 8px rgba(255, 255, 255, .5);
+    }
+    .content-menu-key_wpp{
+      height: 4rem;
+      background: url(https://elida.my.canva.site/images/6c5494d00fd7abcb8673a31cca04378d.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center
+    }
+  }
+}
+
+@media screen and (min-width: 476px){
+  .content-menu{
+    .content-menu_options{
+      width: 75%;
+      height: 4rem;
+      background-position: left;
+    }
+  }
+}
+
+@media screen and (min-width: 780px){
+  .content-menu{
+    .content-menu_options{
+      height: 5rem;
+      .nav{
+        a, span{
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 984px){
+  .content-menu{
+    .content-menu_options{
+      max-width: 65rem;
+      height: 8rem;
+      max-height: 8rem;
+      .nav{
+        a, span{
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 800px){
+  .content-menu{
+    min-height: auto;
+    .content-menu_bg{
+      object-position: top;
+      position: relative;
+    }
+    .content-menu-key{
+      top: 40%;
+      left: 20%;
+      .content-menu-key_img{
+        height: 8rem;
+      }
+      .content-menu-key_elida-name{
+        font-size: 2rem;
+      }
+      .content-menu-key_wpp{
+        height: 7rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1180px){
+  .content-menu{
+    .content-menu-key{
+      top: 30%;
+      .content-menu-key_img{
+        height: 12rem;
+        margin-bottom: 1rem;
+      }
+      .content-menu-key_elida-name{
+        font-size: 3rem;
+      }
+      .content-menu-key_wpp{
+        height: 13rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1500px){
+  .content-menu{
+    .content-menu-key{
+      .content-menu-key_img{
+        height: 15rem;
+      }
+      .content-menu-key_elida-name{
+        font-size: 4rem;
+      }
+      .content-menu-key_wpp{
+        height: 14rem;
+      }
+    }
+  }
+}
+
+.content-menu_img{
+  width: 100%;
+}

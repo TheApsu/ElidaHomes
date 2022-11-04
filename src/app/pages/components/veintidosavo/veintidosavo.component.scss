@@ -1,0 +1,106 @@
+.content-footer{
+  background-color: #000;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  color: #fff;
+  gap: 1rem;
+  .content-logo{
+    width: 100%;
+    text-align: center;
+    .leon{
+      background-image: url(https://elida.my.canva.site/images/78049e7f78dc2bf60dd7215574d9194d.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 100%;
+      height: 200px;
+    }
+  }
+  .content-add{
+    text-align: center;
+    .obelix-txt{
+      font-size: 1.8rem;
+      margin: 1rem 0;
+      font-weight: bold;
+      .solut-txt{
+        color: #eace72;
+      }
+    }
+    .content-btn{
+      .btn{
+        background: linear-gradient(to right, #c1902d, #f9e58c, #c1902d);
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        padding: 10px;
+        font-weight: bold;
+        outline: none;
+      }
+    }
+  }
+  .content-medal{
+    width: 100%;
+    height: 100px;
+    background-image: url(https://elida.my.canva.site/images/c32a0484d6fadc54f8e65f77f37f2602.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .content-house{
+    width: 100%;
+    height: 200px;
+    background-image: url(/assets/veintidosavo/LOGO-DGL.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 800px){
+  .content-footer{
+    justify-content: space-evenly;
+    .content-logo{
+      width: 30%;
+    }
+    .content-add{
+      width: 30%;
+    }
+    .content-medal{
+      width: 30%;
+      height: auto;
+      max-height: 400px;
+    }
+  }
+  
+}
+
+@media screen and (min-width: 1200px){
+  
+  .content-footer{
+
+    .content-logo{
+      p{
+        font-size: 1.5rem;
+      }
+    }
+    .content-add{
+      .present{
+        font-size: 1.5rem;
+
+      }
+      .obelix-txt{
+        font-size: 2rem;
+      }
+    }
+    .content-medal{
+      height: auto;
+      max-height: 400px;
+    }
+    .content-btn{
+      .btn{
+        font-size: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+.veinteavo{
+  position: relative;
+  min-height: 100vh;
+  background: url(/assets/veinteavo/elida-homes.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 10%;
+  color: #fff;
+  .content-txt{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    bottom: 0;
+    .container{
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      background-color: #c7d0d8;
+      padding: 1rem;
+      border-radius: 2em;
+      gap: 1rem;
+      .content-txt_elida{
+        text-align: center;
+        img{
+          width: 100%;
+          max-width: 100px;
+        }
+        p{
+          font-size: 2.2rem;
+        }
+      }
+      .container-socials{
+        display: flex;
+        justify-content: space-between;
+        
+        .socials-fb{
+          background: url(https://elida.my.canva.site/images/cb6c2662b8ae754cc38807cd3f646f36.svg);
+        }
+        .socials-ig{
+          background: url(https://elida.my.canva.site/images/3a8d7aacda991695cb3cbe37cfe32d9d.svg);
+        }
+        .socials-in{
+          background: url(https://elida.my.canva.site/images/96f31c7cb0d12c3108602de6f2c5d363.svg);
+        }
+        .socials-fb, .socials-ig, .socials-in{
+          width: 50px;
+          height: 50px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 800px){
+  .veinteavo{
+    background-position: center;
+    .content-txt{
+      justify-content: flex-end;
+      height: 100%;
+      bottom: 1;
+      .container{
+        padding: 0 12rem;
+        .content-txt_elida{
+          img{
+            max-width: 250px;
+          }
+          p{
+            font-size: 3.2rem;
+          }
+        }
+        .container-socials{
+          .socials-fb, .socials-ig, .socials-in{
+            width: 80px;
+            height: 80px;
+          }
+        }
+      }
+    }
+  }
+}

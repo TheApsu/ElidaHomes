@@ -1,0 +1,103 @@
+.seventhSection{
+  width: 100%;
+  .seventhSection_bg{
+    position: relative;
+    min-height: 100vh;
+    background: url(/assets/seventhSection/elida-01.jpeg);
+    background-position: top;
+    background-size: cover;
+    .download-msg{
+      background: #008037;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 4px 4px 0 #005625;
+    }
+    .container-btn{
+      display: flex;
+      justify-content: space-evenly;
+      position: absolute;
+      left: 0;
+      flex-direction: column;
+      gap: 10px;
+      .container_btn_btn{
+        transform: scale(0.6);
+        width: 0;
+        height: auto;
+      }
+    }
+    .container-triangle{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      margin: 1rem;
+      .container-triangle_img{
+        width: 12rem;
+      }
+      .text{
+        position: absolute;
+        color: #fff;
+        top: 50%;
+        text-align: center;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 800px){
+  .seventhSection{
+    .seventhSection_bg{
+      .download-msg{
+        position: absolute;
+        max-width: 30%;
+        margin: 1rem;
+        p{
+          font-size: 1.2rem;
+        }
+      }
+      .container-btn{
+        justify-content: space-between;
+        flex-direction: row;
+        position: absolute;
+        left: 0;
+        top: 70%;
+        width: 100%;
+        padding: 0 1rem;
+        .container_btn_btn{
+          transform: scale(1);
+          width: auto;
+        }
+      }
+      .container-triangle{
+        top: 0;
+        .container-triangle_img{
+          width: 14rem;
+        }
+        .text{
+          font-size: 1.2rem;
+          top: 0;
+          transform: translateY(20%);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 800px){
+  .seventhSection{
+    .seventhSection_bg{
+      .download-msg{
+        p{
+          font-size: 2rem;
+        }
+      }
+      .container-triangle{
+        margin-right: 2rem;
+        .container-triangle_img{
+          width: 16rem;
+        }
+      }
+    }
+  }
+}

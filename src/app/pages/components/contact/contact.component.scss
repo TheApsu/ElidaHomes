@@ -1,0 +1,157 @@
+.veinteavo{
+  position: relative;
+  min-height: 100vh;
+  background: url(/assets/veinteavo/elida-homes.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 10%;
+  color: #fff;
+  .content-txt{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    bottom: 0;
+    .container{
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      background-color: #c7d0d8;
+      padding: 1rem;
+      border-radius: 2em;
+      gap: 1rem;
+      .content-txt_elida{
+        display: grid;
+        gap: 10px;
+        div{
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+          label{
+            font-size: 1.2rem;
+          }
+          input{
+            min-height: 30px;
+            border: none
+          }
+        }
+      }
+      .container-socials{
+        display: flex;
+        gap: 10px;
+        .content-key{
+          .content-radio{
+            label{
+              font-size: .9rem;
+
+            }
+          }
+          .content-key_div{
+            margin-top: 1rem;
+            img{
+              max-width: 100px;
+            }
+          }
+        }
+        .sellOptions{
+          width: 50%;
+          .content-radio{
+            label{
+              font-size: .9rem;
+              padding-left: .25rem;
+            }
+          }
+          .content-pres{
+            margin-top: .5rem;
+            p{
+              font-size: .8rem;
+            }
+          }
+          .otherRadio{
+            padding-left: .5rem;
+            margin: .5rem 0;
+            label{
+              font-size: .8rem;
+              padding-left: .25rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 800px){
+  .veinteavo{
+    background-position: center;
+    .content-txt{
+      justify-content: flex-end;
+      height: 100%;
+      bottom: 1;
+      .content-form{
+        width: 60%;
+        .container{
+          padding: 0 2rem;
+          .content-txt_elida{
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 18px;
+            padding: 5px;
+            align-items: flex-end;
+            justify-content: center;
+            div{
+              gap: 10px;
+              input{
+                min-height: 50px;
+                border: none
+              }
+            }
+          }
+          .container-socials{
+            .content-key, .sellOptions{
+              width: 50%;
+              .content-radio{
+                label{
+                  font-size: 1.5rem;
+                  padding-left: .5rem;
+                }
+              }
+            }
+            .content-key{
+              .content-key_div{
+                text-align: center;
+                img{
+                  max-width: 250px;
+                }
+                p{
+                  font-size: 2.5rem;
+                }
+              }
+            }
+            .sellOptions{
+              width: 50%;
+              p{
+                font-size: 1.2rem;
+                margin: .5rem 0;
+              }
+              .otherRadio{
+                padding-left: 1rem;
+                margin: .5rem 0;
+                label{
+                  font-size: 1.2rem;
+                  padding-left: .5rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.disableBtn{
+  opacity: .3;
+  pointer-events: none;
+}

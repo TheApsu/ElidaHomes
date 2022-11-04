@@ -1,0 +1,29 @@
+.content-btn{
+    background: linear-gradient(to right, #c1902d, #f9e58c, #c1902d);
+    width: max-content;
+    border-radius: 18px;
+    padding: 5px;
+    margin: auto;
+    box-shadow: 0 5px 8px rgb(0 0 0 / 30%);
+    .content-btn_btn{
+        cursor: pointer;
+        background: linear-gradient(to right, #0b8e36, #32a535, #0b8e36);
+        border-radius: 18px;
+        padding: 0.8rem 1.5rem;
+        border: none;
+        outline: none;
+        color: #fff;
+        font-size: 1.2rem;
+        text-shadow: 0 0 7px rgb(0 0 0 / 30%);
+        font-weight: 900;
+        text-decoration: underline;
+        
+    }
+}
+@media screen and (min-width: 1200px){
+    .content-btn{
+        .content-btn_btn{
+            font-size: 2rem;
+        }
+    }
+}
